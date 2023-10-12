@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="nav-superior" id="menu">
+        <h5 class="menu-title">Portafolio</h5>
+        <ul>
+            <li class="menu" onmousemove="cambiarColor(this, 'red')" onmouseout="restaurarColor(this)">Home</li>
+            <li class="menu" onmousemove="cambiarColor(this, 'red')" onmouseout="restaurarColor(this)">Skills</li>
+            <li class="menu" onmousemove="cambiarColor(this, 'red')" onmouseout="restaurarColor(this)">Works</li>
+            <li class="menu" onmousemove="cambiarColor(this, 'red')" onmouseout="restaurarColor(this)">Resume</li>
+            <li class="menu" onmousemove="cambiarColor(this, 'red')" onmouseout="restaurarColor(this)">Contact</li>
+            <li class="menu">
+                <button class="btn-contrato" onmousemove="cambiarColor(this, 'red')" onmouseout="restaurarColor(this)">HIRE ME</button>
+            </li>
+        </ul>
+    </nav>
+    
+
+    <!--SOBRE MI-->
+
+    <div class="borde">
+        <div class="quien-soy">
+            <div class="info">
+                <h2>Hola, Soy Yastin</h2>
+                <h3>Web developer</h3>
+                <p>Soy un estudiante del colegio AML</p>
+                <div class="btns">
+                    <button class="btn-otro-contrato" id="btn-hire" onmousemove="cambiarColor('btn-hire', 'red')" onmouseout="restaurarColor('btn-hire')">Hire me</button>
+                    <button class="btn-resume" id="btn-resume" onmousemove="cambiarColor('btn-resume', 'blue')" onmouseout="restaurarColor('btn-resume')">Resume <img src="" alt=""></button>
+                </div>
+                <div class="redes-sociales">
+                    <a href=""><img src="Redes Sociales/github.png" alt=""></a>
+                    <a href=""><img src="Redes Sociales/linkedin.png" alt=""></a>
+                    <a href=""><img src="Redes Sociales/instagram.png" alt=""></a>
+                    <a href=""><img src="Redes Sociales/facebook.png" alt=""></a>
+                    <a href=""><img src="Redes Sociales/whatsapp.png" alt=""></a>
+                </div>
+            </div>
+            <img src="imagenes/yo.png" class="img-yo">
+        </div>
+    </div>
+
+    <!--HABILIDADES-->
+
+    <div class="habilidades-2">
+        <div class="my-skills">
+            <h4>My Skills</h4>
+            <p>Estas son mis habilidades.</p>
+        </div>
+        <div class="skills">
+            <div class="lenguajes-aprendidos">
+                <div class="info-2">
+                    <div class="la-habilidad">
+                        <img class="img-lenguajes" src="Lenguajes/html-5.png" alt="">
+                        <h5>HTML</h5>
+                    </div>
+                    <div class="barra">
+                        <div class="progreso-container">
+                            <div class="progreso" id="miProgreso"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-2">
+                    <div class="la-habilidad">
+                        <img class="img-lenguajes" src="Lenguajes/css-3.png" alt="">
+                        <h5>CSS</h5>
+                    </div>
+                    <div class="barra">
+                        <div class="progreso-container">
+                            <div class="progreso" id="miProgreso-css"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-2">
+                    <div class="la-habilidad">
+                        <img class="img-lenguajes" src="Lenguajes/html-5.png" alt="">
+                        <h5>JS</h5>
+                    </div>
+                    <div class="barra">
+                        <div class="progreso-container">
+                            <div class="progreso" id="miProgreso-js"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mas-info">
+                <button class="aprendi">
+                    <img class="empresas" src="imagenes/nodejs.png" alt="">
+                    Node js
+                </button>
+                <button class="aprenda">
+                    <img class="empresas" src="imagenes/expressjs.png" alt="">
+                    Express js
+                </button>
+                <button class="aprendi">
+                    <img class="empresas" src="imagenes/mongoDB.png" alt="">
+                    MangoDB
+                </button>
+                <button class="aprenda">
+                    <img class="empresas" src="imagenes/c++.png" alt="">
+                    C++
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
