@@ -65,6 +65,11 @@ ul {
     padding: 1vw 1.5vw 1vw 1.5vw;
     font-size: 10px;
 }
+a.menu {
+    color: #fff;
+    transition: color 1s;
+}
+
 
 .btn-contrato {
     font-size: 10px;
