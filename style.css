@@ -14,6 +14,7 @@ button {
     border: none;
 }
 
+
 a {
     text-decoration: none;
     color: #fff;
@@ -30,15 +31,15 @@ ul {
 
 /*Nav superior*/
 
+
+
 .nav-superior {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 1vw;
     background-color: #000000;
     color: white;
-    padding-right: 9%;
-    padding-left: 9.5%;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -48,7 +49,7 @@ ul {
     cursor: pointer;
 }
 
-.nav-superior ul {
+.nav-superior div {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -62,15 +63,11 @@ ul {
     color: #ff0000;
 }
 
-#content {
-    background-color: #fff;
-    color: #000;
-}
-
 .menu {
     padding: 1vw 1.5vw 1vw 1.5vw;
     font-size: 10px;
 }
+
 a.menu {
     color: #fff;
     transition: color 1s;
@@ -79,9 +76,17 @@ a.menu {
 
 .btn-contrato {
     font-size: 10px;
-    padding: 0.2vw 1.2vw 0.2vw 1.2vw;
+    padding: 0.5vw 1.6vw 0.5vw 1.6vw;
+    background-color: #000000;
+    color: white;
+    border-radius: 3px;
 }
 
+.btn-contrato:hover {
+    transform: scale(1.05);
+    color: #ff0000;
+    transition: calc(1000);
+}
 /*Quien soy*/
 
 .quien-soy {
@@ -126,6 +131,7 @@ a.menu {
     box-shadow: 0px 4px 6px 1px #fff;
     transition: background-color 0.2s, box-shadow 0.2s;
 }
+
 .btn-resume {
     background-color: #fff;
     color: #000000;
@@ -159,6 +165,9 @@ a.menu {
 .redes-sociales img:hover {
     transform: scale(1.2); 
 }
+.btns button:hover {
+    transform: scale(1.1);
+}
 
 
 
@@ -187,7 +196,7 @@ a.menu {
 
 .progreso-container {
     height: 100%;
-    background-color: #555555;
+    background-color: #b0b0b0;
     border-radius: 10px;
     position: relative;
 }
@@ -203,7 +212,7 @@ a.menu {
     overflow: hidden;
 }
 
-.my-skills {}
+
 
 .my-skills h4 {
     padding-top: 4vw;
