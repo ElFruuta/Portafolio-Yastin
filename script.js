@@ -42,17 +42,37 @@ document.querySelectorAll('a.menu').forEach(function (link) {
     link.addEventListener('click', function (e) {
         e.preventDefault(); // Previene la navegación predeterminada
         var targetId = this.getAttribute('href').substring(1); // Obtiene el ID del destino
-        var targetElement = document.getElementById(targetId); // Encuentra el elemento destino
+        var targetElement = document.getElementById(targetId); 
         if (targetElement) {
-            var targetPosition = targetElement.offsetTop; // Obtiene la posición del elemento destino
-            var duration = 1000; // Duración de la animación en milisegundos (1 segundo)
+            var targetPosition = targetElement.offsetTop; 
+            var duration = 1000; 
 
             window.scrollTo({
                 top: targetPosition,
-                behavior: 'smooth', // Hace que el desplazamiento sea suave
+                behavior: 'smooth', 
                 duration: duration
             });
         }
     });
 });
+
+const content = document.getElementById("content");
+let isScrollingDown = false;
+
+window.addEventListener("scroll", function () {
+    
+    const scrollY = window.scrollY;
+    if (!isScrollingDown && scrollY > 0) {
+        
+        content.style.color = "#fff"; // Cambia el color de texto
+        content.style.backgroundColor = "#000"; // Cambia el color de fondo
+        isScrollingDown = true;
+    } else if (isScrollingDown && scrollY === 0) {
+        
+        content.style.color = "#000"; // Restaura el color de texto original
+        content.style.backgroundColor = "#fff"; // Restaura el color de fondo original
+        isScrollingDown = false;
+    }
+});
+
 
