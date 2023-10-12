@@ -214,7 +214,7 @@ a.menu {
 
 
 
-.my-skills h4 {
+.yo h4 {
     padding-top: 4vw;
     font-size: 2vw;
     color: #9e9e9e;
@@ -223,7 +223,7 @@ a.menu {
     padding-bottom: 1vh;
 }
 
-.my-skills p {
+.yo p {
     color: #777777;
     font-size: 1vw;
 }
@@ -232,6 +232,10 @@ a.menu {
     display: flex;
     padding-left: 9.5%;
     padding-right: 9%;
+}
+.skills- {
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .habilidades-2 {
@@ -257,6 +261,8 @@ a.menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+
+
 
 .info-2 {
     flex: 1;
@@ -319,5 +325,31 @@ a.menu {
 .empresas {
     width: 3vw;
     margin-bottom: 1vw;
+}
+
+
+/*MIS TRABAJOS*/
+
+.top {
+    margin-top: 3vw;
+}
+
+.paginas-web a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    font-size: 11px;
+    margin-bottom: 1vh;
+}
+.paginas-web img {
+    width: 25vw;
+    border-radius: 3px;
+    margin-bottom: 1vh;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
 }
 
