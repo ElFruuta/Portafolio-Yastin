@@ -66,3 +66,39 @@ document.querySelectorAll('a.menu').forEach(function (link) {
     });
 });
 
+document.querySelector('.formulario').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    // Obtén los valores de los campos
+    const email = document.querySelector('#email').value;
+    const nombre = document.querySelector('#nombre').value;
+    const comentario = document.querySelector('#comentario').value;
+
+    // Crea un objeto con los datos del comentario
+    const comentarioData = {
+        email: email,
+        nombre: nombre,
+        comentario: comentario
+    };
+
+    // Envía los datos al servidor (debes proporcionar la URL correcta)
+    fetch('/ruta_al_servidor', {
+        method: 'POST',
+        body: JSON.stringify(comentarioData),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            // Comentario enviado con éxito
+            alert('Comentario enviado con éxito');
+            // Puedes redirigir al usuario a una página de confirmación si lo deseas
+        } else {
+            alert('Hubo un error al enviar el comentario');
+        }
+    })
+    .catch(error => {
+        console.error('Error de red:', error);
+    });
+});
