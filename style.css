@@ -65,6 +65,9 @@ ul {
 .nav-superior .menu:hover {
     color: #ebb40c;
 }
+#menu .menu:hover {
+    color: #ebb40c;
+}
 
 .menu {
     padding: 1vw 1.5vw 1vw 1.5vw;
@@ -83,6 +86,7 @@ a.menu {
     background-color: #000000;
     color: #fffcf1;
     border-radius: 3px;
+    transition: transform 0.3s;
 }
 
 .btn-contrato:hover {
@@ -133,6 +137,7 @@ a.menu {
     cursor: pointer;
     box-shadow: 0px 4px 6px 1px #fffcf1;
     transition: background-color 0.2s, box-shadow 0.2s;
+    transition: transform 0.3s;
 }
 
 .btn-resume {
@@ -144,6 +149,7 @@ a.menu {
     cursor: pointer;
     box-shadow: 0px 4px 6px 1px #fffcf1;
     transition: background-color 0.2s, box-shadow 0.2s;
+    transition: transform 0.3s;
 }
 
 
@@ -486,7 +492,6 @@ a.menu {
 }
 #comentario::placeholder {
     font-size: 1.2vw;
-    padding-top: 0.4vw;
 }
 #comentario, #email, #nombre {
     width: 24vw;
@@ -503,6 +508,10 @@ a.menu {
     height: 2.5vw;
 }
 
+#comentario {
+    padding-top: 1vw;
+}
+
 .send {
     display: flex;
     align-items: center;
@@ -510,6 +519,13 @@ a.menu {
     color: #fffcf1;
     background-color: #eab308;
     cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px #fffcf1;
+    transition: transform 0.3s;
+}
+
+.send:hover {
+    transform: scale(1.05);
 }
 .avion {
     width: 2vw;

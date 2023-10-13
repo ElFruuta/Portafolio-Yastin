@@ -23,30 +23,46 @@ function restaurarColor(id) {
 }
 
 
-window.onscroll = function () {
-
-
+window.addEventListener("DOMContentLoaded", function () {
     var menu = document.getElementById("menu");
-    
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        menu.style.backgroundColor = "#fff"; // Cambia el fondo a blanco al hacer scroll
-        menu.style.color = "#000"; // Cambia el color del texto a negro al hacer scroll
-        var items_menu = menu.getElementsByClassName("menu"); // Cambiar el color de los items a negro al hacer scroll
-        for (const item of items_menu) {
-            item.style.color = "#000";
-        }
+    var items_menu = menu.getElementsByClassName("menu");
 
-    } else {
-        menu.style.backgroundColor = "#000"; // Restaura el fondo original al llegar arriba
-        menu.style.color = "white"; // Restaura el color del texto original al llegar arriba
-        
-        // Cambiar el color de los items a blanco al hacer scroll
-        var items_menu = menu.getElementsByClassName("menu"); 
-        for (const item of items_menu) {
-            item.style.color = "#fff";
+    // Función para cambiar los colores al hacer scroll
+    function changeColorsOnScroll() {
+        var scrollY = window.scrollY || document.documentElement.scrollTop;
+
+        if (scrollY > 50) {
+            menu.style.backgroundColor = "#fff"; // Cambia el fondo a blanco al hacer scroll
+            menu.style.color = "#000"; // Cambia el color del texto a negro al hacer scroll
+            for (const item of items_menu) {
+                item.style.color = "#000"; // Cambia el color de los elementos del menú a negro
+            }
+        } else {
+            menu.style.backgroundColor = "#000"; // Restaura el fondo original al llegar arriba
+            menu.style.color = "white"; // Restaura el color del texto original al llegar arriba
+            for (const item of items_menu) {
+                item.style.color = "white"; // Restaura el color original de los elementos del menú
+            }
         }
     }
-};
+
+    // Agregar evento scroll para cambiar colores al cargar la página
+    changeColorsOnScroll();
+
+    window.addEventListener("scroll", changeColorsOnScroll);
+
+    // Agrega eventos de escucha para el color del texto al pasar el mouse
+    for (const item of items_menu) {
+        item.addEventListener("mouseenter", function () {
+            this.style.color = "#ebb40c"; // Cambia el color del texto al pasar el mouse
+        });
+        item.addEventListener("mouseleave", function () {
+            changeColorsOnScroll(); // Restaura el color original dependiendo del estado del scroll
+        });
+    }
+});
+
+
 
 document.querySelectorAll('a.menu').forEach(function (link) {
     link.addEventListener('click', function (e) {
