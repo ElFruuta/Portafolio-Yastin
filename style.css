@@ -363,7 +363,16 @@ a.menu {
     flex-wrap: wrap;
 }
 
+
+
+
+
+
 /*PASANTIA*/
+
+
+
+
 .yellow {
     color: #ecb91b;
 }
@@ -482,7 +491,10 @@ a.menu {
 #comentario, #email, #nombre {
     width: 24vw;
     border-radius: 3px;
+    font-size: 1vw;
 }
+
+
 #email::placeholder, #nombre::placeholder {
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
