@@ -23,6 +23,11 @@ function restaurarColor(id) {
 }
 
 
+
+
+//Esta funcion me destrozo la vida TT//
+
+
 window.addEventListener("DOMContentLoaded", function () {
     var menu = document.getElementById("menu");
     var items_menu = menu.getElementsByClassName("menu");
@@ -60,7 +65,9 @@ window.addEventListener("DOMContentLoaded", function () {
             changeColorsOnScroll(); // Restaura el color original dependiendo del estado del scroll
         });
     }
-});
+}); //Te ODIOOOOOOOOO//
+
+
 
 
 
