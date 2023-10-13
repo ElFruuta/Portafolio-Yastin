@@ -23,6 +23,7 @@ a {
 ul {
     list-style: none;
 }
+
 .flex {
     display: flex;
 }
@@ -31,6 +32,44 @@ ul {
     padding-left: 9.5%;
     padding-right: 9%;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.fade-out {
+    animation: fadeOut 1.5s ease forwards;
+}
+
+
+
+
+
+
 
 /*Nav superior*/
 
@@ -48,6 +87,7 @@ ul {
     z-index: 1000;
     transition: background-color 0.3s, color 0.3s;
 }
+
 .nav-superior * {
     cursor: pointer;
 }
@@ -57,6 +97,7 @@ ul {
     justify-content: space-around;
     align-items: center;
 }
+
 .nav-superior .menu {
     color: #fffcf1;
     transition: color 0.3s;
@@ -65,6 +106,7 @@ ul {
 .nav-superior .menu:hover {
     color: #ebb40c;
 }
+
 #menu .menu:hover {
     color: #ebb40c;
 }
@@ -85,7 +127,7 @@ a.menu {
     padding: 0.5vw 1.6vw 0.5vw 1.6vw;
     background-color: #000000;
     color: #fffcf1;
-    border-radius: 3px;
+    border-radius: 15px;
     transition: transform 0.3s;
 }
 
@@ -94,6 +136,7 @@ a.menu {
     color: #ebb40c;
     transition: calc(1000);
 }
+
 /*Quien soy*/
 
 .quien-soy {
@@ -113,15 +156,21 @@ a.menu {
 .info * {
     color: #fffcf1;
 }
-.info p, h2, h3 {
+
+.info p,
+h2,
+h3 {
     margin-top: 1vw;
 }
+
 .info p {
     color: #555555;
 }
+
 .info p * {
     color: #919191;
 }
+
 .btns {
     margin-bottom: 2vw;
     margin-top: 2vw;
@@ -160,20 +209,23 @@ a.menu {
     width: 54%;
     padding-left: 1vh;
 }
+
 .redes-sociales img {
-    width: 2vw; 
+    width: 2vw;
     padding: 1vh;
     margin-right: 1vh;
 }
+
 .redes-sociales img {
     width: 2vw;
     height: auto;
-    transition: transform 0.3s; 
+    transition: transform 0.3s;
 }
 
 .redes-sociales img:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
 }
+
 .btns button:hover {
     transform: scale(1.1);
 }
@@ -225,7 +277,7 @@ a.menu {
 
 .yo h4 {
     padding-top: 4vw;
-    font-size:2vw;
+    font-size: 2vw;
     color: #9ca3af;
     border-bottom: 1px solid #9ca3af;
     margin-bottom: 1vw;
@@ -242,6 +294,7 @@ a.menu {
     padding-left: 9.5%;
     padding-right: 9%;
 }
+
 .skills- {
     padding-left: 2%;
     padding-right: 2%;
@@ -253,6 +306,7 @@ a.menu {
     padding-right: 9%;
     padding-top: 2vw;
 }
+
 .habilidades-3 {
     background-color: #ffffff;
     padding-left: 9.5%;
@@ -364,31 +418,37 @@ a.menu {
     margin-bottom: 1vh;
     color: #000;
 }
+
 .paginas-web img {
     width: 24vw;
     border-radius: 3px;
     margin-bottom: 1vh;
     height: auto;
 }
-.paginas-web p {    
+
+.paginas-web p {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 0.3s;
     font-size: 1vw;
 }
+
 .paginas-web a:hover img {
     filter: opacity(35%);
 }
+
 .paginas-web a:hover p {
     opacity: 1;
 }
+
 .main {
     display: flex;
     flex-wrap: wrap;
 }
+
 .center {
     display: flex;
     flex-direction: column;
@@ -408,33 +468,41 @@ a.menu {
 .yellow {
     color: #ecb91b;
 }
+
 .grey {
     color: #757c89;
 }
+
 .greyy {
     color: #989da7;
 }
+
 .juntar {
     display: flex;
     justify-content: center;
     margin-top: 3vw;
     margin-left: -12vw;
 }
+
 .pasantia {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .linea {
     width: 20vw;
     margin-right: -8vw;
 }
+
 .img-parrafo {
     display: flex;
 }
-.img-parrafo div p{
+
+.img-parrafo div p {
     font-size: 1vw;
 }
+
 .info-pasantia {
     width: 25vw;
     border: 1.1px solid #fbd53c;
@@ -442,10 +510,12 @@ a.menu {
     padding: 1vw;
     box-shadow: 0px 4px 6px 6px rgba(0, 0, 0, 0.1);
 }
+
 .info-pasantia * {
     margin-bottom: 0.5vw;
     margin-top: 0.5vw;
 }
+
 #pasantia {
     color: #ebb611;
     border: 1px solid #ccc;
@@ -472,23 +542,28 @@ a.menu {
     flex-direction: column;
     margin-right: 3vw;
 }
+
 .solicitud {
     display: flex;
     align-items: center;
     width: 25vw;
 }
+
 .solicitud h5 {
     font-size: 1vw;
     width: 16vw;
     margin-top: 1vw;
 }
+
 .solicitud h3 {
     width: 20vw;
 }
+
 .formulario {
     display: flex;
     flex-direction: column;
 }
+
 .formulario * {
     margin-bottom: 0.5vw;
     margin-top: 0.5vw;
@@ -496,9 +571,11 @@ a.menu {
     border: none;
     box-shadow: 0px 4px 6px 2px rgb(0, 0, 0, 0.1);
 }
+
 .formulario input::placeholder {
     font-size: 1vw;
 }
+
 .formulario #comentario::placeholder {
     vertical-align: top;
 }
@@ -516,21 +593,28 @@ a.menu {
     box-shadow: 0px 4px 6px 1px rgb(0, 0, 0, 0.1);
     margin-left: -3vw;
 }
+
 #comentario::placeholder {
     font-size: 1.2vw;
 }
-#comentario, #email, #nombre {
+
+#comentario,
+#email,
+#nombre {
     width: 24vw;
     border-radius: 3px;
     font-size: 1vw;
 }
 
 
-#email::placeholder, #nombre::placeholder {
+#email::placeholder,
+#nombre::placeholder {
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
 }
-#email, #nombre {
+
+#email,
+#nombre {
     height: 2.5vw;
 }
 
@@ -553,6 +637,7 @@ a.menu {
 .send:hover {
     transform: scale(1.05);
 }
+
 .avion {
     width: 2vw;
     border: none;
@@ -569,13 +654,16 @@ a.menu {
     padding-left: 9.5%;
     padding-right: 9%;
 }
+
 .contacto p {
     font-size: 1.1vw;
 }
+
 .centrar {
     display: flex;
     justify-content: center;
 }
+
 .redes-sociales-dos {
     display: flex;
     flex-direction: column;
@@ -583,11 +671,13 @@ a.menu {
     align-items: center;
     height: 20vw;
 }
+
 .redes {
     display: flex;
     justify-content: space-around;
     width: 20vw;
 }
+
 .redes a {
     display: flex;
     flex-direction: column;
@@ -597,19 +687,27 @@ a.menu {
     margin-right: 0.5vw;
 }
 
-.white {
+.redes p {
     color: #fffcf1;
 }
 
-.red {
-    width: 1.5vw; 
-
+.redes-sociales-dos h1 {
+    color: #000;
 }
+
+#dos-23 {
+    color: #000;
+}
+
+.red {
+    width: 1.5vw;
+}
+
 .red {
     height: auto;
-    transition: transform 0.3s; 
+    transition: transform 0.3s;
 }
 
 .red:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
 }

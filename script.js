@@ -75,14 +75,14 @@ document.querySelectorAll('a.menu').forEach(function (link) {
     link.addEventListener('click', function (e) {
         e.preventDefault(); // Previene la navegación predeterminada
         var targetId = this.getAttribute('href').substring(1); // Obtiene el ID del destino
-        var targetElement = document.getElementById(targetId); 
+        var targetElement = document.getElementById(targetId);
         if (targetElement) {
-            var targetPosition = targetElement.offsetTop; 
-            var duration = 1000; 
+            var targetPosition = targetElement.offsetTop;
+            var duration = 1000;
 
             window.scrollTo({
                 top: targetPosition,
-                behavior: 'smooth', 
+                behavior: 'smooth',
                 duration: duration
             });
         }
@@ -112,16 +112,35 @@ document.querySelector('.formulario').addEventListener('submit', function (event
             'Content-Type': 'application/json'
         }
     })
-    .then(response => {
-        if (response.ok) {
-            // Comentario enviado con éxito
-            alert('Comentario enviado con éxito');
-            // Puedes redirigir al usuario a una página de confirmación si lo deseas
+        .then(response => {
+            if (response.ok) {
+                // Comentario enviado con éxito
+                alert('Comentario enviado con éxito');
+                // Puedes redirigir al usuario a una página de confirmación si lo deseas
+            } else {
+                alert('Hubo un error al enviar el comentario');
+            }
+        })
+        .catch(error => {
+            console.error('Error de red:', error);
+        });
+});
+
+//Funcion mostrar y dejar de mostrar//
+
+window.addEventListener("scroll", () => {
+    const elements = document.querySelectorAll(".fade-in, .fade-out");
+
+    elements.forEach((element) => {
+        const elementPosition = element.getBoundingClientRect();
+
+        if (elementPosition.top < window.innerHeight && elementPosition.bottom >= 0) {
+            element.classList.remove("fade-out");
+            element.classList.add("fade-in");
         } else {
-            alert('Hubo un error al enviar el comentario');
+            element.classList.remove("fade-in");
+            element.classList.add("fade-out");
         }
-    })
-    .catch(error => {
-        console.error('Error de red:', error);
     });
 });
+
