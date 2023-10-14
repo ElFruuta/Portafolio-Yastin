@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -19,11 +20,16 @@
             <a href="#resume" class="menu">Resumen</a>
             <a href="#contact" class="menu">Contacto</a>
             <a href="" class="menu">
-                <button class="btn-contrato" onmouseover="cambiarColor(this, '#ebb40c')" onmouseout="restaurarColor(this)">
+                <button class="btn-contrato" onmouseover="cambiarColor(this, '#ebb40c')"
+                    onmouseout="restaurarColor(this)">
                     CONTRATO
                 </button>
             </a>
         </div>
+        <button id="toggleStyleButton" class="btn-contrato" onmouseover="cambiarColor(this, '#ebb40c')"
+                onmouseout="restaurarColor(this)">
+                Modo oscuro
+            </button>
     </nav>
 
     <!--SOBRE MI-->
@@ -33,17 +39,24 @@
             <div class="info">
                 <h1>Hola, Soy Yastin</h1>
                 <h2>Desarrollador web</h2>
-                <p>Soy un estudiante del colegio <span><a href="https://www.arturomattelarrain.cl/" target="_blank">AML</a></span></p>
+                <p>Soy un estudiante del colegio <span><a href="https://www.arturomattelarrain.cl/"
+                            target="_blank">AML</a></span></p>
                 <div class="btns">
-                    <button class="btn-otro-contrato" id="btn-hire" onmouseover="cambiarColor('btn-hire', '#ebb40c')" onmouseout="restaurarColor('btn-hire')">Contrátame</button>
-                    <button class="btn-resume" id="btn-resume" onmouseover="cambiarColor('btn-resume', '#ebb40c')" onmouseout="restaurarColor('btn-resume')">Resumen <img src="" alt=""></button>
+                    <button class="btn-otro-contrato" id="btn-hire" onmouseover="cambiarColor('btn-hire', '#ebb40c')"
+                        onmouseout="restaurarColor('btn-hire')">Contrátame</button>
+                    <button class="btn-resume" id="btn-resume" onmouseover="cambiarColor('btn-resume', '#ebb40c')"
+                        onmouseout="restaurarColor('btn-resume')">Resumen <img src="" alt=""></button>
                 </div>
                 <div class="redes-sociales">
-                    <a href="https://github.com/ElFruuta" target="_blank"><img src="Redes Sociales/github.png" alt=""></a>
-                    <a href="https://www.linkedin.com/in/yastin-villarroel-b7a170295/" target="_blank"><img src="Redes Sociales/linkedin.png" alt=""></a>
-                    <a href="https://www.instagram.com/_bye.505/" target="_blank"><img src="Redes Sociales/instagram.png" alt=""></a>
+                    <a href="https://github.com/ElFruuta" target="_blank"><img src="Redes Sociales/github.png"
+                            alt=""></a>
+                    <a href="https://www.linkedin.com/in/yastin-villarroel-b7a170295/" target="_blank"><img
+                            src="Redes Sociales/linkedin.png" alt=""></a>
+                    <a href="https://www.instagram.com/_bye.505/" target="_blank"><img
+                            src="Redes Sociales/instagram.png" alt=""></a>
                     <a href="" target="_blank"><img src="Redes Sociales/facebook.png" alt=""></a>
-                    <a href="https://wa.me/56922326630?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre..." target="_blank"><img src="Redes Sociales/whatsapp.png" alt=""></a>
+                    <a href="https://wa.me/56922326630?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre..."
+                        target="_blank"><img src="Redes Sociales/whatsapp.png" alt=""></a>
                 </div>
             </div>
             <img src="imagenes/yo.png" class="img-yo">
@@ -188,8 +201,8 @@
                             <img class="linea" src="imagenes/linea.png" alt="">
                             <div class="info-pasantia">
                                 <h3 class="h3">Desarrollo Web en el Colegio <span><a
-                                        href="https://www.arturomattelarrain.cl/" class="yelloww"
-                                        target="_blank">AML</a></span></h3>
+                                            href="https://www.arturomattelarrain.cl/" class="yelloww"
+                                            target="_blank">AML</a></span></h3>
                                 <p class="grey">Colegio Arturo Matte Larrain</p>
                                 <p class="yellow">2023 - presente</p>
                                 <p class="greyy">Actualmente estoy estudiando en el Colegio Arturo Matte Larrain. Aunque
@@ -235,7 +248,7 @@
                         <input type="text" name="" id="nombre" placeholder="Nombre">
                         <textarea name="" id="comentario" cols="30" rows="10" placeholder="Deja un mensaje"></textarea>
                         <button class="send">Enviar <img class="avion" src="imagenes/enviar-correo (1).png"
-                            alt=""></button>
+                                alt=""></button>
                     </form>
                 </div>
             </div>
@@ -270,8 +283,34 @@
         </div>
     </div>
 
+    <script>
+        const button = document.getElementById("toggleStyleButton");
+        const stylesheet = document.getElementById("stylesheet");
+        let currentStylesheet = "style.css";
+        let currentScript = "script.js";
+
+        button.addEventListener("click", function () {
+            if (currentStylesheet === "style.css") {
+                currentStylesheet = "noche.css";
+                currentScript = "noche.js";
+            } else {
+                currentStylesheet = "style.css";
+                currentScript = "script.js";
+            }
+            stylesheet.href = currentStylesheet;
+
+            // Cambiar el archivo JavaScript
+            const scriptElement = document.getElementById("script");
+            scriptElement.setAttribute("src", currentScript);
+        });
+    </script>
+
     <script src="script.js"></script>
 
 </body>
 
 </html>
+
+
+
+
