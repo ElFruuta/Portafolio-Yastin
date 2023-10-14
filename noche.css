@@ -77,10 +77,72 @@ ul {
 .fade-out {
     animation: fadeOut 1.5s ease forwards;
 }
+/* Estilo base del input checkbox oculto */
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+/* Estilo base del input checkbox oculto */
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
 
+/* Estilo del contenedor del checkbox */
+.check {
+    position: relative;
+    display: block;
+    width: 4vw;
+    height: 2vw;
+    background-color: #fffcf1; /* Fondo inicialmente blanco */
+    cursor: pointer;
+    border-radius: 2vw;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+}
 
+/* Cambiar el fondo del contenedor cuando el checkbox está marcado */
+input[type="checkbox"]:checked ~ .check {
+    background: #092c3e; /* Fondo azul cuando marcado */
+    border: 2px solid #092c3e; /* Borde azul */
+}
 
+/* Estilo del círculo que se mueve cuando el checkbox está marcado */
+.check::before {
+    content: '';
+    position: absolute;
+    top: 0.2vw;
+    left: 0.2vw;
+    background-color: #092c3e; /* Círculo inicialmente azul */
+    width: 1.6vw;
+    height: 1.6vw;
+    border-radius: 50%;
+    transition: 0.5s;
+}
 
+input[type="checkbox"]:checked ~ .check::before {
+    transform: translateX(5vw); /* Mover a la derecha cuando marcado */
+}
+
+/* Estilo del segundo círculo que se mueve cuando el checkbox está marcado */
+.check::after {
+    content: '';
+    position: absolute;
+    top: 0.2vw;
+    right: 0.2vw;
+    background-color: #fffcf1; /* Círculo inicialmente blanco */
+    width: 1.6vw;
+    height: 1.6vw;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: translateX(-5vw); /* Mover a la izquierda cuando marcado */
+}
+
+input[type="checkbox"]:checked ~ .check::after {
+    transform: translateX(0vw);
+}
 
 
 

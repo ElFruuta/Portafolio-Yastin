@@ -7,29 +7,34 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link id="stylesheet" rel="stylesheet" type="text/css" href="style.css">
+    <script src="modo-nocturno.js"></script>
 </head>
 
 <body>
 
     <nav class="nav-superior" id="menu">
-        <h2 id="home" class="menu-title">Portafolio</h2>
-        <div id="content">
-            <a href="#home" class="menu">Home</a>
-            <a href="#skills" class="menu">Habilidades</a>
-            <a href="#works" class="menu">Trabajos</a>
-            <a href="#resume" class="menu">Resumen</a>
-            <a href="#contact" class="menu">Contacto</a>
-            <a href="" class="menu">
-                <button class="btn-contrato" onmouseover="cambiarColor(this, '#ebb40c')"
-                    onmouseout="restaurarColor(this)">
-                    CONTRATO
-                </button>
-            </a>
+        <div class="aparte">
+            <h2 id="home" class="menu-title">Portafolio</h2>
+            <div id="content">
+                <a href="#home" class="menu">Home</a>
+                <a href="#skills" class="menu">Habilidades</a>
+                <a href="#works" class="menu">Trabajos</a>
+                <a href="#resume" class="menu">Resumen</a>
+                <a href="#contact" class="menu">Contacto</a>
+                <a href="" class="menu">
+                    <button class="btn-contrato" onmouseover="cambiarColor(this, '#ebb40c')"
+                        onmouseout="restaurarColor(this)">
+                        CONTRATO
+                    </button>
+                </a>
+            </div>
         </div>
-        <button id="toggleStyleButton" class="btn-contrato" onmouseover="cambiarColor(this, '#ebb40c')"
-                onmouseout="restaurarColor(this)">
-                Modo oscuro
-            </button>
+        <div class="apartado">
+            <label for="toggleCheckbox" class="toggle-label">
+                <input type="checkbox" id="toggleCheckbox">
+                <div class="check"></div>
+            </label>
+        </div>
     </nav>
 
     <!--SOBRE MI-->
@@ -283,34 +288,12 @@
         </div>
     </div>
 
-    <script>
-        const button = document.getElementById("toggleStyleButton");
-        const stylesheet = document.getElementById("stylesheet");
-        let currentStylesheet = "style.css";
-        let currentScript = "script.js";
+    <script src="modo-nocturno.js"></script>
 
-        button.addEventListener("click", function () {
-            if (currentStylesheet === "style.css") {
-                currentStylesheet = "noche.css";
-                currentScript = "noche.js";
-            } else {
-                currentStylesheet = "style.css";
-                currentScript = "script.js";
-            }
-            stylesheet.href = currentStylesheet;
 
-            // Cambiar el archivo JavaScript
-            const scriptElement = document.getElementById("script");
-            scriptElement.setAttribute("src", currentScript);
-        });
-    </script>
+    <script src="script.js" data-custom="true"></script>
 
-    <script src="script.js"></script>
 
 </body>
 
 </html>
-
-
-
-
