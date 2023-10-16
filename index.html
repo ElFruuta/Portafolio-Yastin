@@ -134,6 +134,13 @@
         </div>
     </div>
 
+
+
+    <!--MIS TRABAJOS-->
+
+
+
+
     <div class="habilidades-3">
         <div class="info fade-in" id="works">
             <div class="yo">
@@ -168,6 +175,11 @@
             </div>
         </div>
     </div>
+
+
+
+
+    <!--Resumen-->
 
     <div class="habilidades-2" id="resume">
         <div class="info fade-in">
@@ -282,16 +294,38 @@
                             <p class="white">Instagram</p>
                         </a>
                     </div>
-                    <p id="dos-23">| Portafolio 2023 |</p>
+                    <p id="dos-23">| Portafolio 2023 Todos los derechos reservados|</p>
                 </div>
             </div>
         </div>
     </div>
 
+
     <script src="modo-nocturno.js"></script>
 
 
     <script src="script.js" data-custom="true"></script>
+
+
+    <script src="noche.js"></script>
+
+
+
+    <script>
+        var toggleCheckbox = document.getElementById("toggleCheckbox");
+        var script1 = document.querySelector('script[src="script.js"]');
+        var script2 = document.querySelector('script[src="noche.js"]');
+        
+        toggleCheckbox.addEventListener("change", function() {
+            if (this.checked) {
+                script1.removeAttribute("disabled");
+                script2.setAttribute("disabled", "disabled");
+            } else {
+                script1.setAttribute("disabled", "disabled");
+                script2.removeAttribute("disabled");
+            }
+        });
+    </script>
 
 
 </body>
