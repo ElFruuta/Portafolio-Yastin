@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const stylesheet = document.getElementById("stylesheet");
     const scriptElements = document.querySelectorAll("script[data-custom]");
 
-    let currentStylesheet = "style.css";
-    let currentScripts = ["script.js"];
+    var currentStylesheet = "style.css";
+    var currentScripts = ["script.js"];
 
     toggleCheckbox.addEventListener("change", function () {
         if (currentStylesheet === "style.css") {
