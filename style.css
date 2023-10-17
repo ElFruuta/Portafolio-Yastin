@@ -519,9 +519,9 @@ h3 {
 
 .paginas-web img {
     width: 24vw;
+    height: 13vw;
     border-radius: 0.3vw;
     margin-bottom: 1vh;
-    height: auto;
 }
 
 .paginas-web p {
