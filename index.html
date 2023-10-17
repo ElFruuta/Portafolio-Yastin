@@ -259,7 +259,9 @@
                             <h1>¿Me necesitas?</h1>
                             <h5>Déjame hacer un lindo diseño para tu página web</h5>
                         </div>
-                        <button class="flecha">→</button>
+                        <div class="btn-flecha">
+                            <button class="flecha">→</button>
+                        </div>
                     </div>
                     <form class="formulario">
                         <input type="email" name="" id="email" placeholder="E-mail">
@@ -305,28 +307,12 @@
     <script src="modo-nocturno.js"></script>
 
 
-    <script src="script.js" data-custom="true"></script>
+    <script src="script.js" ></script>
 
 
     <script src="noche.js"></script>
 
 
-
-    <script>
-        var toggleCheckbox = document.getElementById("toggleCheckbox");
-        var script1 = document.querySelector('script[src="script.js"]');
-        var script2 = document.querySelector('script[src="noche.js"]');
-        
-        toggleCheckbox.addEventListener("change", function() {
-            if (this.checked) {
-                script1.removeAttribute("disabled");
-                script2.setAttribute("disabled", "disabled");
-            } else {
-                script1.setAttribute("disabled", "disabled");
-                script2.removeAttribute("disabled");
-            }
-        });
-    </script>
 
 
 </body>
