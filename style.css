@@ -300,33 +300,29 @@ h3 {
     transition: transform 0.3s;
 }
 
-
 .redes-sociales {
     display: flex;
     background-color: #fff;
     border-radius: 1vw;
-    width: 54%;
-    padding-left: 1vh;
-}
-
-
-.redes-sociales img {
-    width: 2vw;
+    width: 80%; /* Cambia esto según tus preferencias */
     padding: 1vh;
-    margin-right: 1vh;
+    justify-content: space-around; /* Distribuir los elementos horizontalmente */
 }
 
+.redes-sociales a {
+    flex: 1; /* Distribuir el espacio disponible entre los elementos */
+}
 
 .redes-sociales img {
-    width: 2vw;
+    max-width: 100%; /* Las imágenes se ajustarán al ancho del contenedor */
     height: auto;
     transition: transform 0.3s;
 }
 
-
 .redes-sociales img:hover {
     transform: scale(1.2);
 }
+
 
 
 .btns button:hover {
