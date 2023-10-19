@@ -67,7 +67,7 @@
                         target="_blank"><img src="Redes Sociales/whatsapp.png" alt=""></a>
                 </div>
             </div>
-            <img src="imagenes/yo.png" class="img-yo">
+            <img src="imagenes/yo.jpeg" class="img-yo">
         </div>
     </div>
 
@@ -276,13 +276,14 @@
                             <button class="flecha">→</button>
                         </div>
                     </div>
-                    <form class="formulario">
-                        <input type="email" name="" id="email" placeholder="E-mail">
-                        <input type="text" name="" id="nombre" placeholder="Nombre">
-                        <textarea name="" id="comentario" cols="30" rows="10" placeholder="Deja un mensaje"></textarea>
-                        <button class="send">Enviar <img class="avion" src="imagenes/enviar-correo (1).png"
-                                alt=""></button>
-                    </form>
+                    <form class="formulario" id="miFormulario" action="enviar.php" method="post">
+                        <input type="text" id="nombre" class="name" placeholder="Nombre" name="name">
+                        <input type="email" id="email" class="email" placeholder="E-mail" name="email">
+                        <input type="text" id="subjet" class="subjet" placeholder="Numero" name="phone">
+                        <textarea id="comentario" cols="30" rows="10" placeholder="Deja un mensaje" name="message"></textarea>
+                        <button class="send" type="submit" onclick="enviarCorreo()">Enviar<img class="avion" src="imagenes/enviar-correo (1).png"
+                            alt=""></button>
+                    </form> 
                 </div>
             </div>
         </div>
@@ -315,8 +316,6 @@
             </div>
         </div>
     </div>
-
-
 
 
 

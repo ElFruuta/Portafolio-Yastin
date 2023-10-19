@@ -109,3 +109,15 @@ function restaurarColor(id) {
 
 
 
+function enviarCorreo() {
+    var email = document.getElementById("email").value;
+    var nombre = document.getElementById("nombre").value;
+    var comentario = document.getElementById("comentario").value;
+    var cuerpoCorreo = "Nombre: " + nombre + "\nEmail: " + email + "\nMensaje:\n" + comentario;
+
+    // Aquí debes agregar código para enviar el correo, pero ten en cuenta que esto no es seguro.
+
+    // Ejemplo de cómo abrir un cliente de correo predeterminado del usuario.
+    var mailtoLink = "mailto:yastinvillarroel2005@gmail.com?subject=Mensaje de contacto&body=" + cuerpoCorreo;
+    window.location.href = mailtoLink;
+}
