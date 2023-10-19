@@ -1,8 +1,3 @@
-
-
-
-
-
 window.addEventListener("DOMContentLoaded", function () {
     const toggleCheckbox = document.getElementById("toggleCheckbox");
     const stylesheet = document.getElementById("stylesheet");
@@ -76,7 +71,11 @@ window.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-    
+
+
+
+
+
 
 
 
