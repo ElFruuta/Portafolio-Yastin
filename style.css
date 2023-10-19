@@ -752,7 +752,8 @@ h3 {
 
 #comentario,
 #email,
-#nombre {
+#nombre,
+#subjet {
     width: 24vw;
     border-radius: 0.3vw;
     font-size: 1vw;
@@ -760,13 +761,15 @@ h3 {
 
 
 #email::placeholder,
-#nombre::placeholder {
+#nombre::placeholder,
+#subjet::placeholder {
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
 }
 
 #email,
-#nombre {
+#nombre,
+#subjet {
     height: 2.5vw;
 }
 
