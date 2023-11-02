@@ -286,7 +286,7 @@ h3 {
     font-size: 1vw;
     padding: 0.6vw 1.6vw 0.6vw 1.6vw;
     margin-right: 1vw;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.2s, box-shadow 0.2s;
     transition: transform 0.3s;
@@ -303,7 +303,7 @@ h3 {
     color: #000000;
     font-size: 1vw;
     padding: 0.6vw 1.6vw 0.6vw 1.6vw;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.2s, box-shadow 0.2s;
     transition: transform 0.3s;
@@ -574,13 +574,18 @@ h3 {
     margin-bottom: 1vh;
     color: #fffcf1;
 }
-
+@media screen and(max-width: 768px) {
+    .paginas-web a {
+        width: 5%;
+    }
+    
+}
 
 .paginas-web img {
     width: 24vw;
     border-radius: 0.3vw;
     margin-bottom: 1vh;
-    height: auto;
+    height: 13vw;
 }
 
 
