@@ -155,10 +155,17 @@ input[type="checkbox"]:checked ~ .check::after {
 
 /*Nav superior*/
 
-
-
-
-
+.aparte {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 140vw;
+    margin-left: 1.3%;
+}
+.content {
+    display: flex;
+    align-items: center;
+}
 
 .nav-superior {
     display: flex;
@@ -171,6 +178,10 @@ input[type="checkbox"]:checked ~ .check::after {
     z-index: 1000;
     transition: background-color 0.3s, color 0.3s;
 }
+#home {
+    font-size: 2vw;
+    margin-left: -1.5vw;
+}   
 
 
 .nav-superior * {
@@ -230,6 +241,7 @@ a.menu {
     color: #ebb40c;
     transition: calc(1000);
 }
+
 
 
 /*Quien soy*/
@@ -314,30 +326,24 @@ h3 {
 }
 
 
-
-
 .redes-sociales {
     display: flex;
     background-color: #fff;
     border-radius: 1vw;
-    width: 54%;
-    padding-left: 1vh;
-}
-
-
-.redes-sociales img {
-    width: 2vw;
+    width: 80%; /* Cambia esto según tus preferencias */
     padding: 1vh;
-    margin-right: 1vh;
+    justify-content: space-around; /* Distribuir los elementos horizontalmente */
 }
 
+.redes-sociales a {
+    flex: 1; /* Distribuir el espacio disponible entre los elementos */
+}
 
 .redes-sociales img {
-    width: 2vw;
+    max-width: 100%; /* Las imágenes se ajustarán al ancho del contenedor */
     height: auto;
     transition: transform 0.3s;
 }
-
 
 .redes-sociales img:hover {
     transform: scale(1.2);
@@ -347,8 +353,6 @@ h3 {
 .btns button:hover {
     transform: scale(1.1);
 }
-
-
 
 
 
@@ -558,11 +562,9 @@ h3 {
     display: inline-block;
 }
 
-
 .top {
     margin-top: 3vw;
 }
-
 
 .paginas-web a {
     display: flex;
@@ -574,20 +576,13 @@ h3 {
     margin-bottom: 1vh;
     color: #fffcf1;
 }
-@media screen and(max-width: 768px) {
-    .paginas-web a {
-        width: 5%;
-    }
-    
-}
 
 .paginas-web img {
     width: 24vw;
+    height: 13vw;
     border-radius: 0.3vw;
     margin-bottom: 1vh;
-    height: 13vw;
 }
-
 
 .paginas-web p {
     position: absolute;
@@ -600,7 +595,6 @@ h3 {
     font-size: 1.1vw;
     color: #fffcf1;
 }
-
 
 .paginas-web a:hover img {
     filter: opacity(35%);
@@ -617,7 +611,6 @@ h3 {
     flex-wrap: wrap;
 }
 
-
 .center {
     display: flex;
     flex-direction: column;
@@ -628,12 +621,6 @@ h3 {
     color: #fffcf1;
     font-size: 1.3vw;
 }
-
-
-
-
-
-
 
 
 
