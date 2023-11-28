@@ -523,7 +523,7 @@ h3 {
 /*MIS TRABAJOS*/
 
 .paginas-web {
-    position: relative; 
+    position: relative;
     display: inline-block;
 }
 
@@ -537,7 +537,7 @@ h3 {
     align-items: center;
     margin: 1vh 0.5vh;
     color: #000;
-    text-align: center; 
+    text-align: center;
 }
 
 .paginas-web a img {
@@ -576,28 +576,21 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(33.33% - 2vh);  
+    width: calc(33.33% - 2vh);
     box-sizing: border-box;
 }
-@media screen and (max-width: 768px) {
-    .center {
-        width: calc(50% - 2vh);
-    }
-}
 
-@media screen and (max-width: 480px) {
-    .center {
-        width: calc(100% - 2vh);
-    }
-}
+
+
 
 .paginas-web img {
-    width: 100%; 
-    height: auto; 
-    max-width: 100%; 
+    width: 100%;
+    height: auto;
+    max-width: 100%;
     border-radius: 0.3vw;
     margin-bottom: 1vh;
 }
+
 .center p {
     font-size: 1.3vw;
 }
@@ -648,26 +641,30 @@ h3 {
 #pasantia {
     font-size: 2vw;
 }
+
 .diseno {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 1vw;
 }
+
 .circulo {
     border: 1px solid #eab308;
-    width: 1vw;
+    width: 2vh;
     height: 2vh;
     border-radius: 50%;
 }
+
 .linea {
     background-color: #555555;
-    width: 2px;
+    width: 1px;
     height: 100%;
 }
 
 .img-parrafo {
     display: flex;
+    margin-left: 6vw;
 }
 
 .img-parrafo div p {
@@ -680,7 +677,7 @@ h3 {
     border-radius: 1vw;
     padding: 1vw;
     box-shadow: 0vw 0.4vw 0.6vw 0.6vw rgba(0, 0, 0, 0.1);
-    margin-left: 
+    margin-left: 3vh;
 }
 
 .h3 {
@@ -700,34 +697,6 @@ h3 {
     box-shadow: 0px 0.4vw 0.6vw 0.1vw rgba(0, 0, 0, 0.1);
     margin-bottom: 4vw;
     margin-left: 10vw;
-}
-@media screen and (max-width: 768px) {
-    .juntar {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
-    }
-
-    .pasantia {
-        width: 100%;
-        margin-bottom: 2vh;
-    }
-
-    .info-pasantia {
-        width: 30vw;
-        margin-left: 0;
-    }
-
-    #pasantia {
-        margin-bottom: 2vw;
-        margin-left: 0;
-    }
-
-    .linea {
-        width: 2px;
-        margin-right: 0;
-        margin-bottom: 1vh;
-    }
 }
 
 
@@ -856,39 +825,175 @@ h3 {
     border: none;
     box-shadow: none;
 }
+
 @media screen and (max-width: 768px) {
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+    .redes-sociales {
+        border-radius: 10px;
+    }
+    .redes-sociales img {
+        width: 8vw;
+        margin-left: 1vh;
+    }
+    .la-habilidad {
+        font-size: 1em;
+        margin-top: 2vw;
+    }
+    .aprenda, .aprendi {
+        width: 20vw;
+        height: 20vw;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.6em;
+    }
+    .info {
+        font-size: 1.5em;
+    }
+    .info h1 {
+        font-size: 1.4em;
+        margin-top: 2vw;
+    }
+    .info h2 {
+        font-size: 1.3em;
+    }
+    .info p {
+        font-size: 1em;
+    }
+    .btns {
+        display: flex;
+        flex-direction: column;
+    }
+    .btns a button {
+        font-size: 1em;
+        margin-top: 3vw;
+    }
+    .mas-info {
+        margin-left: 6vw;
+    }
+    .empresas {
+        width: 7vw;
+    }
+    
+    .yo h4{
+        font-size: 1.5em;
+    }
+    .yo p {
+        font-size: 0.7em;
+    }
+    .center {
+        width: calc(50% - 2vh);
+    }
     .flexx {
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
+    }
+    .formulario input::placeholder, textarea::placeholder {
+        font-size: 1em;
     }
 
     .solicitud,
     .formulario {
         width: 100%;
-        margin-bottom:2vh; 
+        margin-bottom: 2vh;
         justify-content: center;
         align-items: center;
         margin-top: 3vw;
     }
+
     .send {
         width: 60%;
     }
 
     .solicitud,
     .formulario * {
-        margin: 1vh 0; 
+        margin: 1vh 0;
+        font-size: 1em;
     }
+    .info-solicitud {
+        display: flex;
+        flex-direction: column;
+        margin-right: 13vw;
+    }
+    .info-solicitud h1 {
+        font-size: 1.5em;
+    }
+    .info-solicitud h5 {
+        font-size: 0.8em;
+        width: 30vw;
+    }
+
     #comentario::placeholder {
         font-size: 1.2vw;
     }
-    
+
     #comentario,
     #email,
     #nombre,
     #subjet {
         width: 58%;
         border-radius: 0.3vw;
-        font-size: 1vw;
+        font-size: 3vw;
+    }
+    .juntar {
+        flex-direction: column;
+        align-items: center;
+        margin-left: -10vw;
+    }
+
+    .pasantia {
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+
+    .circulo {
+        width: 1vh;
+        height: 1vh;
+    }
+
+    .info-pasantia {
+        width: 45vw;
+        margin-left: 0;
+    }
+    
+    .info-pasantia * {
+        font-size: 1em;
+    }
+
+    #pasantia {
+        margin-bottom: 3vw;
+        margin-left: 5vw;
+        font-size: 1.3em;
+    }
+
+    .diseno {
+        margin-right: 1vh;
+    }
+
+    .linea {
+        width: 1px;
+        margin-right: 0;
+    }
+    .info-pasantia .yellow {
+        font-size: 0.7em;
+        color: #ecb91b;
+    }
+    
+    .info-pasantia .grey {
+        font-size: 0.7em;
+        color: #757c89;
+    }
+    
+    .info-pasantia .greyy {
+        font-size: 0.7em;
+        color: #989da7;
+    }
+}
+@media screen and (max-width: 480px) {
+    .center {
+        width: calc(100% - 2vh);
     }
 }
 
@@ -910,8 +1015,9 @@ footer {
     align-items: center;
     flex-direction: column;
 }
-footer .social_icons, footer .menu 
-{
+
+footer .social_icons,
+footer .menu {
     position: relative;
     display: flex;
     justify-content: center;
@@ -920,7 +1026,8 @@ footer .social_icons, footer .menu
     flex-wrap: wrap;
 }
 
-footer .social_icons li, footer .menu li {
+footer .social_icons li,
+footer .menu li {
     list-style: none;
 }
 
@@ -944,6 +1051,7 @@ footer .menu li a {
     transition: 0.5s;
     opacity: 0.75;
 }
+
 footer .menu li a:hover {
     opacity: 1;
 }
@@ -996,14 +1104,19 @@ footer .wave#wave4 {
 @keyframes animateWave {
     0% {
         background-position-x: 1000px;
-    } 100% {
+    }
+
+    100% {
         background-position-x: 0px;
     }
 }
+
 @keyframes animateWave_02 {
     0% {
         background-position-x: 0px;
-    } 100% {
+    }
+
+    100% {
         background-position-x: 1000px;
     }
 }
@@ -1011,6 +1124,7 @@ footer .wave#wave4 {
 .redes {
     transition: transform 0.3s;
 }
+
 .redes:hover {
     transform: scale(1.2);
 }
