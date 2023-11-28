@@ -990,6 +990,18 @@ h3 {
         font-size: 0.7em;
         color: #989da7;
     }
+    .social_icons {
+        font-size: 1em;
+    }
+    .menu li {
+        font-size: 3em;
+    }
+    .derechos {
+        font-size: 1em;
+    }
+    .formulario button img{
+        width: 10vw;
+    }
 }
 @media screen and (max-width: 480px) {
     .center {
@@ -1032,7 +1044,7 @@ footer .menu li {
 }
 
 footer .social_icons li a {
-    font-size: 1em;
+    font-size: 2em;
     color: #fff;
     margin: 0 10px;
     display: inline-block;
@@ -1044,7 +1056,7 @@ footer .social_icons li a:hover {
 }
 
 footer .menu li a {
-    font-size: 3vh;
+    font-size: 1.5em;
     color: #fff;
     margin: 0 10px;
     display: inline-block;
@@ -1061,7 +1073,7 @@ footer p {
     text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
-    font-size: 0.7em;
+    font-size: 1.5em;
 }
 
 footer .wave {
