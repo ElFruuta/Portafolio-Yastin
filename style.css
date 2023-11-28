@@ -432,7 +432,6 @@ h3 {
     background-color: #ffffff;
     padding-left: 9.5%;
     padding-right: 9%;
-    padding-top: 2vw;
 }
 
 .habilidades-3 {
@@ -676,7 +675,9 @@ h3 {
 
 /*CONTACTO*/
 
-
+#contact {
+    margin-bottom: 3vh;
+}
 .flexx {
     display: flex;
     justify-content: space-evenly;
@@ -866,7 +867,7 @@ footer p {
 
 footer .wave {
     position: absolute;
-    top: -80px;
+    top: -100px;
     left: 0;
     width: 100%;
     height: 100px;
