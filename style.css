@@ -448,7 +448,9 @@ h3 {
     flex-direction: column;
     margin-top: 4vw;
 }
-
+.leguajes_de_programacion {
+    font-size: 1.5em;
+}
 
 .mas-info {
     flex: 1;
@@ -843,7 +845,7 @@ h3 {
         margin-top: 2vw;
     }
     .aprenda, .aprendi {
-        width: 20vw;
+        width: 100%;
         height: 20vw;
         align-items: center;
         justify-content: center;
@@ -871,7 +873,10 @@ h3 {
         margin-top: 3vw;
     }
     .mas-info {
-        margin-left: 6vw;
+        margin-left: 1vw;
+        width: 100%;
+        margin-top: 3vw;
+        margin-bottom: 2vw;
     }
     .empresas {
         width: 7vw;
@@ -885,6 +890,13 @@ h3 {
     }
     .center {
         width: calc(50% - 2vh);
+    }
+    .leguajes_de_programacion {
+        font-size: 1em;
+    }
+    .lenguajes-aprendidos {
+        margin-left: -10vw;
+        margin-right: -6vw;
     }
     .flexx {
         flex-direction: column;
@@ -966,7 +978,7 @@ h3 {
     #pasantia {
         margin-bottom: 3vw;
         margin-left: 5vw;
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     .diseno {
@@ -978,7 +990,7 @@ h3 {
         margin-right: 0;
     }
     .info-pasantia .yellow {
-        font-size: 0.7em;
+        font-size: 0.6em;
         color: #ecb91b;
     }
     
@@ -1002,6 +1014,17 @@ h3 {
     }
     .formulario button img{
         width: 10vw;
+    }
+    #nombre, #email, #subjet {
+        width: 100%;
+        height: 5vh;
+    }
+    #comentario {
+        width: 100%;
+        padding-bottom: 20vw;
+    }
+    #comentario::placeholder {
+        font-size: 1em;
     }
 }
 @media screen and (max-width: 480px) {
