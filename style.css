@@ -980,7 +980,9 @@ h3 {
         width: 75vw;
         margin-left: 0;
     }
-    
+    .btn-flecha {
+        display: none;
+    }
     .info-pasantia * {
         font-size: 1em;
     }
