@@ -338,23 +338,15 @@ h3 {
     color: #000;
     font-size: 3em;
     margin-left: 1.4vw;
+    transition: transform 0.3s;
+}
+.las-redes:hover {
+    transform: scale(1.2);
 }
 
 .redes-sociales a {
     flex: 1;
 }
-
-.redes-sociales img {
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.3s;
-}
-
-.redes-sociales img:hover {
-    transform: scale(1.2);
-}
-
-
 
 .btns button:hover {
     transform: scale(1.1);

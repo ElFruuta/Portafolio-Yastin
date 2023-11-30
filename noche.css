@@ -429,11 +429,6 @@ a.menu {
     .empresas {
         width: 7vw;
     }
-    .las-redes {
-        color: #000;
-        font-size: 1em;
-        margin-left: 2vw;
-    }
     
     .yo h4{
         font-size: 1.5em;
@@ -534,7 +529,7 @@ a.menu {
         font-size: 1.2em;
     }
     .leguajes_de_programacion {
-        color: #ececec;
+        color: #cbcbcb;
     }
 
     .diseno {
@@ -544,6 +539,11 @@ a.menu {
     .linea {
         width: 1px;
         margin-right: 0;
+    }
+    .las-redes {
+        color: #000;
+        font-size: 1em;
+        margin-left: 2vw;
     }
     .info-pasantia .yellow {
         font-size: 0.6em;
@@ -587,4 +587,11 @@ a.menu {
     .center {
         width: calc(100% - 2vh);
     }
+}
+.las-redes {
+    color: #000;
+    font-size: 3em;
+}
+.las-redes:hover {
+    transform: scale(1.2);
 }
