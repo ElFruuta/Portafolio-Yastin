@@ -131,6 +131,10 @@ input[type="checkbox"]:checked ~ .check {
     /* Resto de estilos sin cambios */
 }
 
+.aprendi, .aprenda {
+    box-shadow: 10vw 4vw 0.6vw 0.6vw #2c3e50 !important;
+}
+
 .aprenda {
     background-color: black !important;
     color: #fffcf1 !important;
@@ -307,6 +311,7 @@ input[type="checkbox"]:checked ~ .check {
         margin-right: 13vw;
         width: 70vw;
     }
+    
     .info-solicitud h1 {
         font-size: 1.5em;
         width: 70vw;

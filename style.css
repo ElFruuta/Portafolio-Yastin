@@ -265,10 +265,12 @@ input[type="checkbox"]:checked~.check::after {
 
 .info {
     display: flex;
-
     flex-direction: column;
     padding: 1vw;
     border-radius: 1vw 1vw 1vw 1vw;
+}
+.info h1 {
+    font-size: 4em;
 }
 
 
@@ -279,6 +281,7 @@ input[type="checkbox"]:checked~.check::after {
 .info p,
 h2,
 h3 {
+    font-size: 2.5em;
     margin-top: 1vw;
 }
 
@@ -486,7 +489,7 @@ h3 {
     max-height: 100%;
     margin: 2vw;
     padding: 2vw;
-    box-shadow: 0vw 0.4vw 0.6vw rgba(0, 0, 0, 0.1);
+    box-shadow: 0vw 0.4vw 0.6vw rgba(0, 0, 0, 0.1) !important;
     transition: background-color 0.2s, box-shadow 0.2s;
     font-size: 1vw;
     border-radius: 1vw;
@@ -494,7 +497,7 @@ h3 {
 
 .aprendi:hover,
 .aprenda:hover {
-    box-shadow: 0vw 0.6vw 0.8vw rgba(0, 0, 0, 0.2);
+    box-shadow: 0vw 0.6vw 0.8vw rgba(0, 0, 0, 0.2) !important;
     /* Cambia la sombra al pasar el ratón */
 }
 
@@ -508,7 +511,7 @@ h3 {
     max-height: 100%;
     margin: 2vw;
     padding: 2vw;
-    box-shadow: 0vw 0.4vw 0.6vw rgba(0, 0, 0, 0.1);
+    box-shadow: 0vw 0.4vw 0.6vw rgba(0, 0, 0, 0.1) !important;
     transition: background-color 0.2s, box-shadow 0.2s;
     font-size: 1vw;
     border-radius: 1vw;
@@ -1180,7 +1183,7 @@ footer .wave#wave4 {
     }
 
     #menu-mobile {
-        display: flex !important;
+        display: flex;
     }
 
     #menu-mobile {
@@ -1190,6 +1193,7 @@ footer .wave#wave4 {
         color: #fff;
         padding: 0 10%;
         position: fixed;
+        height: 5vh;
         width: 80vw;
     }
 
@@ -1213,7 +1217,6 @@ footer .wave#wave4 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
         margin-left: 1.3%;
     }
     .aparte h2 {
@@ -1238,15 +1241,20 @@ footer .wave#wave4 {
     #menu2 {
         position: fixed;
         display: flex;
-        width: 100%;
+        width: 82%;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         padding: 0vw 1vw 0.6vw 1vw;
         color: #fffcf1;
         top: 0;
+        height: 100vh;
         z-index: 1000;
         transition: background-color 0.3s, color 0.3s;
+        transition: left 1s ease;
+    }
+    #menu2 div div a {
+        margin: 2vw 0;
     }
     #menu2 {
         backdrop-filter: blur(15px);
@@ -1264,17 +1272,57 @@ footer .wave#wave4 {
         background-color: #fffcf1;
         /* Fondo inicialmente blanco */
         cursor: pointer;
-        border-radius: 5vw;
-        padding: 2vw 3vw;
+        border-radius: 10vw;
+        padding: 2vw 4vw;
         overflow: hidden;
         transition: ease-in 0.5s;
     }
+    input[type="checkbox"] {
+        -webkit-appearance: none;
+        visibility: hidden;
+        display: none;
+    }
+    
+    /* Estilo base del input checkbox oculto */
+    input[type="checkbox"] {
+        -webkit-appearance: none;
+        visibility: hidden;
+        display: none;
+    }
+    
+    /* Cambiar el fondo del contenedor cuando el checkbox está marcado */
+    input[type="checkbox"]:checked~.check {
+        background: #092c3e;
+        /* Fondo azul cuando marcado */
+        border: 2px solid #092c3e;
+        /* Borde azul */
+    }
+    
+    /* Estilo del círculo que se mueve cuando el checkbox está marcado */
+    .check::before {
+        content: '';
+        position: absolute;
+        top: 0.2vw;
+        left: 0.2vw;
+        background-color: #092c3e;
+        /* Círculo inicialmente azul */
+        width: 5.6vw;
+        height: 5.6vw;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+    
+    input[type="checkbox"]:checked~.check::before {
+        transform: translateX(5vw);
+        /* Mover a la derecha cuando marcado */
+    }
+    
     /* Estilo del segundo círculo que se mueve cuando el checkbox está marcado */
     .check::after {
         content: '';
         position: absolute;
         top: 0.2vw;
-        right: 0.2vw;
+        right: 1vw;
         background-color: #fffcf1;
         /* Círculo inicialmente blanco */
         width: 5.6vw;
@@ -1283,6 +1331,10 @@ footer .wave#wave4 {
         transition: 0.5s;
         transform: translateX(-5vw);
         /* Mover a la izquierda cuando marcado */
+    }
+    
+    input[type="checkbox"]:checked~.check::after {
+        transform: translateX(0vw);
     }
 }
 

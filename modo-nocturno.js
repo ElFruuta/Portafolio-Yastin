@@ -118,13 +118,21 @@ function restaurarColor(id) {
     button.style.color = ''; // Restaurar el color original
 }
 
-var clic = 1;
+let menuVisible = false;
 
 function mostrar() {
-    var x = document.getElementById('menu2');
-    if (x.style.display === 'none') {
-        x.style.display = 'flex';
+    const menu = document.getElementById('menu2');
+
+    if (!menuVisible) {
+        menu.style.left = '0';
+        menuVisible = true;
+        setTimeout(()=> {
+        }, 1000)
     } else {
-        x.style.display = 'none';
+        menu.style.left = '100%';
+        menuVisible = false;
+        setTimeout(() => {
+        }, 1000);
     }
 }
+
