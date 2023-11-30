@@ -36,7 +36,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
     menuMobilemenu = document.getElementById("menu", "menu-mobile");
     var items_menu = menu.getElementsByClassName("menu");
-    var itemss = menu.getElementsByClassName("menu2");
+    var itemss = menu.getElementsByClassName("menu");
     var menuMobile = document.getElementById("menu-mobile");
 
     // Función para cambiar los colores al hacer scroll
