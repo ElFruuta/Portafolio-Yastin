@@ -381,13 +381,6 @@ a.menu {
         display: flex;
         flex-direction: column;
     }
-    .redes-sociales {
-        border-radius: 10px;
-    }
-    .redes-sociales img {
-        width: 8vw;
-        margin-left: 1vh;
-    }
     .la-habilidad {
         font-size: 1em;
         margin-top: 2vw;
@@ -540,7 +533,7 @@ a.menu {
         width: 1px;
         margin-right: 0;
     }
-    .las-redes {
+    .redes-sociales a .las-redes {
         color: #000;
         font-size: 1em;
         margin-left: 2vw;
