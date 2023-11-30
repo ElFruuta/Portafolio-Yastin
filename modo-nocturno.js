@@ -34,8 +34,10 @@ window.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    var menu = document.getElementById("menu");
+    menuMobilemenu = document.getElementById("menu", "menu-mobile");
     var items_menu = menu.getElementsByClassName("menu");
+    var itemss = menu.getElementsByClassName("menu2");
+    var menuMobile = document.getElementById("menu-mobile");
 
     // Función para cambiar los colores al hacer scroll
     function changeColorsOnScroll() {
@@ -44,14 +46,24 @@ window.addEventListener("DOMContentLoaded", function () {
         if (scrollY > 50) {
             menu.style.backgroundColor = noche ? "#1a1a1a" : "#fff";
             menu.style.color = noche ? "#fffcf1" : "#000";
+            menuMobile.style.backgroundColor = noche ? "#1a1a1a" : "#fff";
+            menuMobile.style.color = noche ? "#fffcf1" : "#000";
+            for (const item of items_menu) {
+                item.style.color = noche ? "#fffcf1" : "#000";
+            }
             for (const item of items_menu) {
                 item.style.color = noche ? "#fffcf1" : "#000";
             }
         } else {
             menu.style.backgroundColor = noche ? "" : "#000";
             menu.style.color = noche ? "#fffcf1" : "white";
-            for (const item of items_menu) {
-                item.style.color = noche ? "#fffcf1" : "white";
+            menuMobile.style.backgroundColor = noche ? "" : "#000";
+            menuMobile.style.color = noche ? "#fffcf1" : "white";
+            for (const itemsss of itemss) {
+                itemsss.style.color = noche ? "#fffcf1" : "white";
+            }
+            for (const itemsss of itemss) {
+                itemsss.style.color = noche ? "#fffcf1" : "white";
             }
         }
     }
@@ -106,18 +118,13 @@ function restaurarColor(id) {
     button.style.color = ''; // Restaurar el color original
 }
 
+var clic = 1;
 
-
-
-function enviarCorreo() {
-    var email = document.getElementById("email").value;
-    var nombre = document.getElementById("nombre").value;
-    var comentario = document.getElementById("comentario").value;
-    var cuerpoCorreo = "Nombre: " + nombre + "\nEmail: " + email + "\nMensaje:\n" + comentario;
-
-    // Aquí debes agregar código para enviar el correo, pero ten en cuenta que esto no es seguro.
-
-    // Ejemplo de cómo abrir un cliente de correo predeterminado del usuario.
-    var mailtoLink = "mailto:yastinvillarroel2005@gmail.com?subject=Mensaje de contacto&body=" + cuerpoCorreo;
-    window.location.href = mailtoLink;
+function mostrar() {
+    var x = document.getElementById('menu2');
+    if (x.style.display === 'none') {
+        x.style.display = 'flex';
+    } else {
+        x.style.display = 'none';
+    }
 }
