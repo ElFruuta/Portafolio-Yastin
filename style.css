@@ -1178,14 +1178,6 @@ footer .wave#wave4 {
     display: none !important;
 }
 @media only screen and (max-width: 768px) {
-    #menu {
-        display: none !important;
-    }
-
-    #menu-mobile {
-        display: flex;
-    }
-
     #menu-mobile {
         display: flex !important;
         align-items: center;
@@ -1257,7 +1249,7 @@ footer .wave#wave4 {
         margin: 2vw 0;
     }
     #menu2 {
-        backdrop-filter: blur(15px);
+        backdrop-filter: blur(10vw);
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         background-color: rgba(0, 0, 0, 0.2); 
@@ -1353,6 +1345,6 @@ footer .wave#wave4 {
         display: none; 
     }
     #menu2 {
-        display: flex; 
+        display: flex;
     }
 }
