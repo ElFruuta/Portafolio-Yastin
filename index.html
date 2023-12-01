@@ -16,11 +16,11 @@
         <div class="aparte">
             <h2 id="home" class="menu-title">Portafolio</h2>
             <div id="content">
-                <a href="#foto" class="menu" data-target="home">Home</a>
-                <a href="#skills" class="menu" data-target="skills">Habilidades</a>
-                <a href="#works" class="menu" data-target="works">Trabajos</a>
-                <a href="#resume" class="menu" data-target="resume">Resumen</a>
-                <a href="#contact" class="menu" data-target="contact">Contacto</a>
+                <a href="#foto" class="menu" data-target="home" onclick="retrasarRedireccion(event)">Home</a>
+                <a href="#skills" class="menu" data-target="skills" onclick="retrasarRedireccion(event)">Habilidades</a>
+                <a href="#works" class="menu" data-target="works" onclick="retrasarRedireccion(event)">Trabajos</a>
+                <a href="#resume" class="menu" data-target="resume" onclick="retrasarRedireccion(event)">Resumen</a>
+                <a href="#contact" class="menu" data-target="contact" onclick="retrasarRedireccion(event)">Contacto</a>
                 <a href="" class="menu">
                     <a href="https://www.linkedin.com/in/yastin-villarroel-b7a170295/" target="_blank" class="">
                         <button class="btn-contrato" onmouseover="cambiarColor(this, '#ebb40c')"
@@ -39,14 +39,15 @@
         </div>
     </nav>
     <nav class="nav-superior" id="menu2">
+        <h2 id="eliminar" onclick="mostrar()"><ion-icon name="close-circle-outline"></ion-icon></h2>
         <div class="aparte">
             <h2 id="home" class="menu-title">Portafolio</h2>
             <div id="content">
-                <a href="#foto" class="menu" data-target="home">Home</a>
-                <a href="#skills" class="menu" data-target="skills">Habilidades</a>
-                <a href="#works" class="menu" data-target="works">Trabajos</a>
-                <a href="#resume" class="menu" data-target="resume">Resumen</a>
-                <a href="#contact" class="menu" data-target="contact">Contacto</a>
+                <a href="#foto" class="menu" data-target="home" onclick="retrasarRedireccion(event)">Home</a>
+                <a href="#skills" class="menu" data-target="skills" onclick="retrasarRedireccion(event)">Habilidades</a>
+                <a href="#works" class="menu" data-target="works" onclick="retrasarRedireccion(event)">Trabajos</a>
+                <a href="#resume" class="menu" data-target="resume" onclick="retrasarRedireccion(event)">Resumen</a>
+                <a href="#contact" class="menu" data-target="contact" onclick="retrasarRedireccion(event)">Contacto</a>
                 <a href="" class="menu">
                     <a href="https://www.linkedin.com/in/yastin-villarroel-b7a170295/" target="_blank" class="">
                         <button class="btn-contrato" onmouseover="cambiarColor(this, '#ebb40c')"
@@ -367,11 +368,11 @@
             <li class="redes"><a href="https://wa.me/56922326630?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre..."><ion-icon name="logo-whatsapp"></ion-icon></a></li>
         </ul>
         <ul class="menu">
-            <li><a href="#foto">Home</a></li>
-            <li><a href="#skills">Hambilidades</a></li>
-            <li><a href="#works">Trabajos</a></li>
-            <li><a href="#resume">Resumen</a></li>
-            <li><a href="#contact">contacto</a></li>
+            <li><a href="#foto" onclick="retrasarRedireccion(event)">Home</a></li>
+            <li><a href="#skills" onclick="retrasarRedireccion(event)">Hambilidades</a></li>
+            <li><a href="#works" onclick="retrasarRedireccion(event)">Trabajos</a></li>
+            <li><a href="#resume" onclick="retrasarRedireccion(event)">Resumen</a></li>
+            <li><a href="#contact" onclick="retrasarRedireccion(event)">contacto</a></li>
         </ul>
         <p class="derechos">| Portafolio 2023 todos los derechos recervados |</p>
     </footer>

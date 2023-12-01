@@ -1011,6 +1011,12 @@ h3 {
         font-size: 0.7em;
         color: #989da7;
     }
+    #eliminar *{
+        font-size: 1.2em;
+    }
+    #eliminar {
+        margin-bottom: 20vw;
+    }
     .social_icons {
         font-size: 1em;
     }
@@ -1217,6 +1223,7 @@ footer .wave#wave4 {
     }
     #home {
         font-size: 2em;
+        margin-top: 0;
     }
     .apartado {
         margin-top: 3vh;
@@ -1252,7 +1259,7 @@ footer .wave#wave4 {
         backdrop-filter: blur(10vw);
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.2); 
+        background-color: rgba(0, 0, 0, 0.2);
     }
     
     /* Estilo del contenedor del checkbox */

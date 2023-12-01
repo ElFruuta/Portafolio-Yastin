@@ -122,6 +122,7 @@ let menuVisible = false;
 
 function mostrar() {
     const menu = document.getElementById('menu2');
+    var element = document.getElementById('eliminar');
 
     if (!menuVisible) {
         menu.style.left = '0';
@@ -131,8 +132,23 @@ function mostrar() {
     } else {
         menu.style.left = '100%';
         menuVisible = false;
+        element = false;
         setTimeout(() => {
         }, 1000);
     }
 }
 
+function retrasarRedireccion(event) {
+    event.preventDefault();
+    setTimeout(function() {
+      const destino = document.getElementById(event.target.getAttribute('href').substring(1));
+      if (destino) {
+        const offset = destino.offsetTop;
+        window.scroll({
+          top: offset,
+          behavior: 'smooth'
+        });
+      }
+    }, 10);
+  }
+  
