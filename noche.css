@@ -420,6 +420,16 @@ input[type="checkbox"]:checked ~ .check {
     #comentario::placeholder {
         font-size: 1em;
     }
+    .paginas-web p {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s;
+        width: 80%;
+        font-size: 0.7em;
+    }
 }
 @media screen and (max-width: 480px) {
     .center {

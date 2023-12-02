@@ -1262,6 +1262,8 @@ footer .wave#wave4 {
         transition: background-color 0.3s, color 0.3s;
         transition: left 1s ease;
     }
+
+    
     #menu2 div div a {
         margin: 2vw 0;
     }
@@ -1362,7 +1364,7 @@ footer .wave#wave4 {
         display: none; 
     }
     #menu2 {
-        display: none;
+        display: flex;
     }
     #menu-mobile {
         display: flex;
